@@ -15,6 +15,19 @@ Route::get('/', 'PagesController@landing');
 Route::get('home', 'HomeController@index');
 
 /*
+ * Cute Pup Route
+ * */
+
+Route::get('home', 'HomeController@pup');
+
+/*
+ * Search Route
+ * */
+
+Route::get('search', 'SearchController@search');
+
+
+/*
  * Authentication
  * */
 Route::controllers([

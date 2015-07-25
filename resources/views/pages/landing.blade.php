@@ -3,8 +3,8 @@
 
 @section('content')
     <div class="lheading">
-    <h1 class="lheader">Welcome to DogBone</h1>
-    <p id="landingP">Here at DogBone, we are dedicated to helping you take great care of your furry loved one!</p>
+    <h1 class="lheader">Welcome to Dog Bone</h1>
+    <p id="landingP">Here at Dog Bone, we are dedicated to helping you take great care of your furry loved one!</p>
     </div>
     <div class="benefits">
         <h3 class="member">Member Benefits</h3>

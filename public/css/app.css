@@ -6322,7 +6322,7 @@ ul{
     border-bottom: 1px solid #F0F0F0;
 }
 
-#dbsearch{
+.searchbox input{
     width: 100%;
     color: #4C3A1B;
     text-indent: 10px;
@@ -6341,4 +6341,65 @@ ul{
 
 .homeheading{
    text-align: left;
+}
+
+.searchimg{
+    width: 400px;
+    margin: 0 auto;
+}
+.image{
+    border-radius: 15px;
+}
+.foodname{
+    text-align: center;
+}
+
+.edible{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.search-panel{
+    position: relative;
+    top: -10px;
+
+}
+
+.pup{
+    position: relative;
+    top: 10px;
+
+}
+.pup h1{
+    text-align: center;
+}
+.welcome{
+    position: relative;
+    left: -80px;
+}
+
+.cp{
+    width: 400px;
+    margin: 0 auto;
+    height: 520px;
+
+}
+
+.breed{
+    text-align: center;
+    margin-top:10px;
+}
+
+.searchbtn{
+    margin-top: 15px;
+    position: relative;
+    left: 250px;
+    background-color: #4284B0;
+
+}
+
+.searchbtn{
+    color: #ffffff;
 }

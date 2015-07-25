@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
-
+use App\cutePup;
+use View;
+use DB;
 class HomeController extends Controller {
 
 	/*
@@ -32,5 +34,11 @@ class HomeController extends Controller {
 	{
 		return view('home');
 	}
+
+    public function pup(){
+
+           $pups = cutePup::all()->random(1);
+        return view('home', compact('pups'));
+    }
 
 }
