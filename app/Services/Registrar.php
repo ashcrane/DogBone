@@ -1,8 +1,11 @@
 <?php namespace App\Services;
 
 use App\User;
+use Illuminate\Support\Facades\Mail;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
+use Illuminate\Contracts\Mail\Mailer;
+
 
 class Registrar implements RegistrarContract {
 
@@ -29,11 +32,23 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		return User::create([
+		$user = User::create([
 			'name' => $data['name'],
 			'email' => $data['email'],
 			'password' => bcrypt($data['password']),
+
 		]);
+
+        // Setting up Welcome Mail
+        $data['email'] = $user->email;
+           Mail::send('emails.welcome', $data, function($message) use ($data){
+               $message->from('welcome@dogbone.com', "Dog Bone");
+               $message->subject("Welcome to Dog Bone!");
+               $message->to($data['email']);
+           });
+
+            return $user;
+
 	}
 
 }

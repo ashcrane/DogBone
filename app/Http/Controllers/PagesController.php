@@ -12,4 +12,7 @@ class PagesController extends Controller {
         return view('pages.landing');
     }
 
+    public function home(){
+        return view('home');
+    }
 }

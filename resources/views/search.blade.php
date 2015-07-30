@@ -6,7 +6,7 @@
             <div class="col-md-10 col-md-offset-1">
 
                 <div class="panel panel-default search-panel">
-                    <div class="panel-heading homeheading"><h5>Welcome {{ Auth::user()->name }}!</h5></div>
+                    <div class="panel-heading homeheading"></div>
 
                     <div class="panel-body search-body">
 

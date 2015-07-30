@@ -136,6 +136,7 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
         'Collective\Html\HtmlServiceProvider',
+        'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
 
 		/*
 		 * Application Service Providers...
@@ -195,7 +196,7 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
-
+        'OAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
 	],
 
 ];

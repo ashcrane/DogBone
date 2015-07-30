@@ -15,7 +15,7 @@ return [
 	|
 	*/
 
-	'driver' => 'smtp',
+	'driver' => env("MAIL_DRIVER"),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => null, 'name' => null],
+	'from' => ['address' => "postmaster@sandboxf9fbb8698d9143c19b64ddeb8af2100c.mailgun.org", 'name' => 'Dog Bone'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
 	|
 	*/
 
-	'username' => null,
+	'username' => 'postmaster@sandboxf9fbb8698d9143c19b64ddeb8af2100c.mailgun.org',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
 	|
 	*/
 
-	'password' => null,
+	'password' => "21e4f8d30e39d01795a8eba1dbfb9646",
 
 	/*
 	|--------------------------------------------------------------------------
